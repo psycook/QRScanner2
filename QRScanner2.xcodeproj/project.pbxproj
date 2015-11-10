@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		093FAE6E1BF2701C004F17B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 093FAE6D1BF2701C004F17B6 /* main.m */; };
+		093FAE711BF2701C004F17B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 093FAE701BF2701C004F17B6 /* AppDelegate.m */; };
+		093FAE741BF2701C004F17B6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093FAE731BF2701C004F17B6 /* FirstViewController.m */; };
+		093FAE771BF2701C004F17B6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093FAE761BF2701C004F17B6 /* SecondViewController.m */; };
+		093FAE7A1BF2701C004F17B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093FAE781BF2701C004F17B6 /* Main.storyboard */; };
+		093FAE7C1BF2701C004F17B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093FAE7B1BF2701C004F17B6 /* Assets.xcassets */; };
+		093FAE7F1BF2701C004F17B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093FAE7D1BF2701C004F17B6 /* LaunchScreen.storyboard */; };
+		093FAE891BF27996004F17B6 /* OffersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093FAE871BF27996004F17B6 /* OffersViewController.m */; };
+		093FAE8C1BF28D17004F17B6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093FAE8B1BF28D17004F17B6 /* AVFoundation.framework */; };
+		093FAE8E1BF29006004F17B6 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 093FAE8D1BF29006004F17B6 /* beep.mp3 */; };
+		093FAE901BF29B62004F17B6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093FAE8F1BF29B62004F17B6 /* MapKit.framework */; };
+		093FAE961BF29E66004F17B6 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093FAE951BF29E66004F17B6 /* EstimoteSDK.framework */; };
+		093FAE981BF2A159004F17B6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093FAE971BF2A159004F17B6 /* CoreLocation.framework */; };
+		093FAE9A1BF2A162004F17B6 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093FAE991BF2A162004F17B6 /* CoreBluetooth.framework */; };
+		093FAE9C1BF2A16C004F17B6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093FAE9B1BF2A16C004F17B6 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		093FAE691BF2701C004F17B6 /* QRScanner2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRScanner2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		093FAE6D1BF2701C004F17B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		093FAE6F1BF2701C004F17B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		093FAE701BF2701C004F17B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		093FAE721BF2701C004F17B6 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		093FAE731BF2701C004F17B6 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		093FAE751BF2701C004F17B6 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		093FAE761BF2701C004F17B6 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		093FAE791BF2701C004F17B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		093FAE7B1BF2701C004F17B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		093FAE7E1BF2701C004F17B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		093FAE801BF2701C004F17B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		093FAE861BF27996004F17B6 /* OffersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OffersViewController.h; sourceTree = "<group>"; };
+		093FAE871BF27996004F17B6 /* OffersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OffersViewController.m; sourceTree = "<group>"; };
+		093FAE8B1BF28D17004F17B6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		093FAE8D1BF29006004F17B6 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beep.mp3; path = Sounds/beep.mp3; sourceTree = "<group>"; };
+		093FAE8F1BF29B62004F17B6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		093FAE951BF29E66004F17B6 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EstimoteSDK.framework; path = "../../../APIs/iOS-SDK-master/EstimoteSDK/EstimoteSDK.framework"; sourceTree = "<group>"; };
+		093FAE971BF2A159004F17B6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		093FAE991BF2A162004F17B6 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		093FAE9B1BF2A16C004F17B6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		093FAE661BF2701C004F17B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093FAE9C1BF2A16C004F17B6 /* SystemConfiguration.framework in Frameworks */,
+				093FAE9A1BF2A162004F17B6 /* CoreBluetooth.framework in Frameworks */,
+				093FAE981BF2A159004F17B6 /* CoreLocation.framework in Frameworks */,
+				093FAE901BF29B62004F17B6 /* MapKit.framework in Frameworks */,
+				093FAE8C1BF28D17004F17B6 /* AVFoundation.framework in Frameworks */,
+				093FAE961BF29E66004F17B6 /* EstimoteSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		093FAE601BF2701C004F17B6 = {
+			isa = PBXGroup;
+			children = (
+				093FAE6B1BF2701C004F17B6 /* QRScanner2 */,
+				093FAE6A1BF2701C004F17B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		093FAE6A1BF2701C004F17B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				093FAE691BF2701C004F17B6 /* QRScanner2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		093FAE6B1BF2701C004F17B6 /* QRScanner2 */ = {
+			isa = PBXGroup;
+			children = (
+				093FAE6F1BF2701C004F17B6 /* AppDelegate.h */,
+				093FAE701BF2701C004F17B6 /* AppDelegate.m */,
+				093FAE721BF2701C004F17B6 /* FirstViewController.h */,
+				093FAE731BF2701C004F17B6 /* FirstViewController.m */,
+				093FAE861BF27996004F17B6 /* OffersViewController.h */,
+				093FAE871BF27996004F17B6 /* OffersViewController.m */,
+				093FAE751BF2701C004F17B6 /* SecondViewController.h */,
+				093FAE761BF2701C004F17B6 /* SecondViewController.m */,
+				093FAE781BF2701C004F17B6 /* Main.storyboard */,
+				093FAE7B1BF2701C004F17B6 /* Assets.xcassets */,
+				093FAE7D1BF2701C004F17B6 /* LaunchScreen.storyboard */,
+				093FAE8D1BF29006004F17B6 /* beep.mp3 */,
+				093FAE6C1BF2701C004F17B6 /* Supporting Files */,
+			);
+			path = QRScanner2;
+			sourceTree = "<group>";
+		};
+		093FAE6C1BF2701C004F17B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				093FAE6D1BF2701C004F17B6 /* main.m */,
+				093FAE801BF2701C004F17B6 /* Info.plist */,
+				093FAE9B1BF2A16C004F17B6 /* SystemConfiguration.framework */,
+				093FAE991BF2A162004F17B6 /* CoreBluetooth.framework */,
+				093FAE971BF2A159004F17B6 /* CoreLocation.framework */,
+				093FAE951BF29E66004F17B6 /* EstimoteSDK.framework */,
+				093FAE8F1BF29B62004F17B6 /* MapKit.framework */,
+				093FAE8B1BF28D17004F17B6 /* AVFoundation.framework */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		093FAE681BF2701C004F17B6 /* QRScanner2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 093FAE831BF2701C004F17B6 /* Build configuration list for PBXNativeTarget "QRScanner2" */;
+			buildPhases = (
+				093FAE651BF2701C004F17B6 /* Sources */,
+				093FAE661BF2701C004F17B6 /* Frameworks */,
+				093FAE671BF2701C004F17B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRScanner2;
+			productName = QRScanner2;
+			productReference = 093FAE691BF2701C004F17B6 /* QRScanner2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		093FAE611BF2701C004F17B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Simon Cook";
+				TargetAttributes = {
+					093FAE681BF2701C004F17B6 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 093FAE641BF2701C004F17B6 /* Build configuration list for PBXProject "QRScanner2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 093FAE601BF2701C004F17B6;
+			productRefGroup = 093FAE6A1BF2701C004F17B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				093FAE681BF2701C004F17B6 /* QRScanner2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		093FAE671BF2701C004F17B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093FAE7F1BF2701C004F17B6 /* LaunchScreen.storyboard in Resources */,
+				093FAE7C1BF2701C004F17B6 /* Assets.xcassets in Resources */,
+				093FAE8E1BF29006004F17B6 /* beep.mp3 in Resources */,
+				093FAE7A1BF2701C004F17B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		093FAE651BF2701C004F17B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093FAE771BF2701C004F17B6 /* SecondViewController.m in Sources */,
+				093FAE711BF2701C004F17B6 /* AppDelegate.m in Sources */,
+				093FAE891BF27996004F17B6 /* OffersViewController.m in Sources */,
+				093FAE741BF2701C004F17B6 /* FirstViewController.m in Sources */,
+				093FAE6E1BF2701C004F17B6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		093FAE781BF2701C004F17B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				093FAE791BF2701C004F17B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		093FAE7D1BF2701C004F17B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				093FAE7E1BF2701C004F17B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		093FAE811BF2701C004F17B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		093FAE821BF2701C004F17B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		093FAE841BF2701C004F17B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "/Users/simoncook/Documents/Development/APIs/iOS-SDK-master/EstimoteSDK";
+				INFOPLIST_FILE = QRScanner2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = simon.cook.QRScanner2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		093FAE851BF2701C004F17B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "/Users/simoncook/Documents/Development/APIs/iOS-SDK-master/EstimoteSDK";
+				INFOPLIST_FILE = QRScanner2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = simon.cook.QRScanner2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		093FAE641BF2701C004F17B6 /* Build configuration list for PBXProject "QRScanner2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093FAE811BF2701C004F17B6 /* Debug */,
+				093FAE821BF2701C004F17B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		093FAE831BF2701C004F17B6 /* Build configuration list for PBXNativeTarget "QRScanner2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093FAE841BF2701C004F17B6 /* Debug */,
+				093FAE851BF2701C004F17B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 093FAE611BF2701C004F17B6 /* Project object */;
+}
