@@ -12,24 +12,33 @@
 @property (nonatomic) CLLocationManager *locationManager;
 @end
 
-@implementation AppDelegate 
+@implementation AppDelegate
 
+@synthesize offersArray, offersDictionary;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    self.offersDictionary = [[NSMutableDictionary alloc] init];
+    
     _locationManager = [[CLLocationManager alloc] init];
     _locationManager.delegate = self;
- 
+    
+    //remove existing regions
+    for (CLRegion *monitored in [_locationManager monitoredRegions])
+        [_locationManager stopMonitoringForRegion:monitored];
+    
     if([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
         [self.locationManager requestAlwaysAuthorization];
     }
     
-    CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:@"8492E75F-4FD6-469D-B132-043FE94921D8"]
+    CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc]
+                                                        initWithUUIDString:@"8492E75F-4FD6-469D-B132-043FE94921D8"]
                                                                      major:10374
                                                                      minor:24794
                                                                 identifier:@"Wholemeal Rice"];
     [self.locationManager startMonitoringForRegion:region];
+    [self.locationManager startRangingBeaconsInRegion:region];
     NSLog(@"Monitoring Beacons");
     return YES;
 }
@@ -73,5 +82,24 @@
     NSLog(@"Did Exit Region %@", [region identifier]);
 }
 
+- (void)locationManager:(CLLocationManager *)manager
+        didRangeBeacons:(NSArray *)beacons
+               inRegion:(CLBeaconRegion *)region {
+    
+    if ([beacons count] > 0) {
+        CLBeacon *nearestExhibit = [beacons firstObject];
+
+        // Present the exhibit-specific UI only when
+        // the user is relatively close to the exhibit.
+        if (CLProximityNear == nearestExhibit.proximity) {
+            if([nearestExhibit.proximityUUID.UUIDString isEqual:@"8492E75F-4FD6-469D-B132-043FE94921D8"]) {
+                [offersDictionary setValue:@"Wholemeal Rice" forKey:@"Wholemeal Rice"];
+                offersArray = [offersDictionary allValues];
+                NSLog(@"Added Offer, there are %d offers", [offersDictionary count]);
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"refreshView" object:nil];
+            }
+        }
+    }
+}
 
 @end

@@ -1,25 +1,32 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0566dfbf-bb30-0410-a477-a3ae38949edd",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CE3623726F5194373D2FEAB9A69A4952AD554C2F",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
-    "0566dfbf-bb30-0410-a477-a3ae38949edd" : {
+    "0566dfbf-bb30-0410-a477-a3ae38949edd++746" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "0566dfbf-bb30-0410-a477-a3ae38949edd" : 0
+    "0566dfbf-bb30-0410-a477-a3ae38949edd++746" : 0,
+    "CE3623726F5194373D2FEAB9A69A4952AD554C2F" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E142F1EC-C05F-4BEC-9A00-FCF27A5E20BF",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "0566dfbf-bb30-0410-a477-a3ae38949edd" : "Development\/"
+    "0566dfbf-bb30-0410-a477-a3ae38949edd++746" : "QRScanner2\/",
+    "CE3623726F5194373D2FEAB9A69A4952AD554C2F" : "QRScanner2\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "QRScanner2",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Salesforce\/QRScanner2\/QRScanner2.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "QRScanner2.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/dev.icreateditfirst.com:8080\/svn\/arkworld",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0566dfbf-bb30-0410-a477-a3ae38949edd"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0566dfbf-bb30-0410-a477-a3ae38949edd++746"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/psycook\/QRScanner2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CE3623726F5194373D2FEAB9A69A4952AD554C2F"
     }
   ]
 }

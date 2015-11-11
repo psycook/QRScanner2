@@ -6,9 +6,9 @@
 //  Copyright © 2015 Simon Cook. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "ScanViewController.h"
 
-@interface SecondViewController ()
+@interface ScanViewController ()
 @property (nonatomic) BOOL isReading;
 @property (nonatomic, strong) AVCaptureSession *captureSession;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation SecondViewController
+@implementation ScanViewController
 
 #pragma mark Lifecycle Methods
 

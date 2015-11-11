@@ -7,6 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-@interface OffersViewController : UIViewController
+@interface OffersViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableViewCell *tableCell;
+@property (weak, nonatomic) IBOutlet UITableView *offersTable;
+- (IBAction)refresh:(id)sender;
+
 @end

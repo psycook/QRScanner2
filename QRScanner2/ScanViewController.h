@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface SecondViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate>
+@interface ScanViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView   *previewView;
 @property (weak, nonatomic) IBOutlet UILabel  *scanLabel;

@@ -11,8 +11,9 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, CLLocationManagerDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) UIWindow            *window;
+@property (strong, nonatomic) NSMutableDictionary *offersDictionary;
+@property (strong, nonatomic) NSArray             *offersArray;
 
 @end
 

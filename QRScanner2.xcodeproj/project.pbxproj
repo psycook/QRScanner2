@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		093FAE6E1BF2701C004F17B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 093FAE6D1BF2701C004F17B6 /* main.m */; };
 		093FAE711BF2701C004F17B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 093FAE701BF2701C004F17B6 /* AppDelegate.m */; };
-		093FAE741BF2701C004F17B6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093FAE731BF2701C004F17B6 /* FirstViewController.m */; };
-		093FAE771BF2701C004F17B6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093FAE761BF2701C004F17B6 /* SecondViewController.m */; };
+		093FAE741BF2701C004F17B6 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093FAE731BF2701C004F17B6 /* MapViewController.m */; };
+		093FAE771BF2701C004F17B6 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093FAE761BF2701C004F17B6 /* ScanViewController.m */; };
 		093FAE7A1BF2701C004F17B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093FAE781BF2701C004F17B6 /* Main.storyboard */; };
 		093FAE7C1BF2701C004F17B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093FAE7B1BF2701C004F17B6 /* Assets.xcassets */; };
 		093FAE7F1BF2701C004F17B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093FAE7D1BF2701C004F17B6 /* LaunchScreen.storyboard */; };
@@ -29,10 +29,10 @@
 		093FAE6D1BF2701C004F17B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		093FAE6F1BF2701C004F17B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		093FAE701BF2701C004F17B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		093FAE721BF2701C004F17B6 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		093FAE731BF2701C004F17B6 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		093FAE751BF2701C004F17B6 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		093FAE761BF2701C004F17B6 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		093FAE721BF2701C004F17B6 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		093FAE731BF2701C004F17B6 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		093FAE751BF2701C004F17B6 /* ScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		093FAE761BF2701C004F17B6 /* ScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
 		093FAE791BF2701C004F17B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		093FAE7B1BF2701C004F17B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		093FAE7E1BF2701C004F17B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,12 +86,12 @@
 			children = (
 				093FAE6F1BF2701C004F17B6 /* AppDelegate.h */,
 				093FAE701BF2701C004F17B6 /* AppDelegate.m */,
-				093FAE721BF2701C004F17B6 /* FirstViewController.h */,
-				093FAE731BF2701C004F17B6 /* FirstViewController.m */,
+				093FAE721BF2701C004F17B6 /* MapViewController.h */,
+				093FAE731BF2701C004F17B6 /* MapViewController.m */,
 				093FAE861BF27996004F17B6 /* OffersViewController.h */,
 				093FAE871BF27996004F17B6 /* OffersViewController.m */,
-				093FAE751BF2701C004F17B6 /* SecondViewController.h */,
-				093FAE761BF2701C004F17B6 /* SecondViewController.m */,
+				093FAE751BF2701C004F17B6 /* ScanViewController.h */,
+				093FAE761BF2701C004F17B6 /* ScanViewController.m */,
 				093FAE781BF2701C004F17B6 /* Main.storyboard */,
 				093FAE7B1BF2701C004F17B6 /* Assets.xcassets */,
 				093FAE7D1BF2701C004F17B6 /* LaunchScreen.storyboard */,
@@ -187,10 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				093FAE771BF2701C004F17B6 /* SecondViewController.m in Sources */,
+				093FAE771BF2701C004F17B6 /* ScanViewController.m in Sources */,
 				093FAE711BF2701C004F17B6 /* AppDelegate.m in Sources */,
 				093FAE891BF27996004F17B6 /* OffersViewController.m in Sources */,
-				093FAE741BF2701C004F17B6 /* FirstViewController.m in Sources */,
+				093FAE741BF2701C004F17B6 /* MapViewController.m in Sources */,
 				093FAE6E1BF2701C004F17B6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +340,7 @@
 				093FAE851BF2701C004F17B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

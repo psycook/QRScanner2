@@ -6,13 +6,13 @@
 //  Copyright © 2015 Simon Cook. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "MapViewController.h"
 
-@interface FirstViewController ()
+@interface MapViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation MapViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
