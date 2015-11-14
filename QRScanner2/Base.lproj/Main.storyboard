@@ -32,7 +32,7 @@
                             <constraint firstItem="rDX-Vu-5nE" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="oQd-R0-uN2"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="first" id="acW-dT-cKf" userLabel="Map"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="Map" id="acW-dT-cKf" userLabel="Map"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,12 +51,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jDM-Gp-oey">
-                                <rect key="frame" x="200" y="20" width="200" height="200"/>
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8y-9y-qfY">
-                                        <rect key="frame" x="85" y="8" width="31" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8y-9y-qfY">
+                                        <rect key="frame" x="0.0" y="8" width="200" height="21"/>
                                         <animations/>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="AnH-S7-j6c"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="SzO-JN-cjy"/>
                                             <constraint firstAttribute="height" constant="21" id="b6i-DD-nKE"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -67,46 +69,47 @@
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="o8y-9y-qfY" firstAttribute="centerX" secondItem="jDM-Gp-oey" secondAttribute="centerX" id="InA-F3-KIz"/>
-                                    <constraint firstAttribute="width" constant="200" id="hmN-kH-73j"/>
-                                    <constraint firstAttribute="height" constant="200" id="keB-xH-d9M"/>
-                                    <constraint firstItem="o8y-9y-qfY" firstAttribute="top" secondItem="jDM-Gp-oey" secondAttribute="top" constant="8" id="xZk-R2-a2b"/>
+                                    <constraint firstAttribute="trailing" secondItem="o8y-9y-qfY" secondAttribute="trailing" id="QSe-8s-NUJ"/>
+                                    <constraint firstItem="o8y-9y-qfY" firstAttribute="top" secondItem="jDM-Gp-oey" secondAttribute="top" constant="10" id="TVo-H1-d2A"/>
+                                    <constraint firstAttribute="width" constant="200" id="bQy-8P-8CL"/>
+                                    <constraint firstAttribute="height" constant="200" id="bnH-rc-227"/>
+                                    <constraint firstItem="o8y-9y-qfY" firstAttribute="leading" secondItem="jDM-Gp-oey" secondAttribute="leading" id="rea-R1-Akn"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tz6-5Q-37m">
-                                <rect key="frame" x="200" y="228" width="200" height="21"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="skX-v2-NYf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQd-DN-zZr">
-                                <rect key="frame" x="200" y="257" width="200" height="30"/>
+                                <rect key="frame" x="200" y="513" width="200" height="30"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="0ia-b3-adH"/>
+                                    <constraint firstAttribute="height" constant="30" id="6cq-gX-9sW"/>
                                 </constraints>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="scanButtonPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="rJb-ag-zkF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tz6-5Q-37m">
+                                <rect key="frame" x="20" y="456" width="560" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aaq-KQ-HOl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Tz6-5Q-37m" firstAttribute="top" secondItem="jDM-Gp-oey" secondAttribute="bottom" constant="8" id="0TQ-Eo-nSd"/>
-                            <constraint firstItem="BQd-DN-zZr" firstAttribute="top" secondItem="Tz6-5Q-37m" secondAttribute="bottom" constant="8" id="5Qn-Yp-Hps"/>
-                            <constraint firstItem="jDM-Gp-oey" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="XjR-Ny-eer"/>
-                            <constraint firstItem="jDM-Gp-oey" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="aD0-Jg-Jqx"/>
-                            <constraint firstItem="Tz6-5Q-37m" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="jpv-8l-VnZ"/>
-                            <constraint firstItem="BQd-DN-zZr" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="uuL-HC-QsO"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="BQd-DN-zZr" secondAttribute="bottom" constant="8" id="DOm-kD-3xm"/>
+                            <constraint firstItem="jDM-Gp-oey" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="GUl-oT-X8r"/>
+                            <constraint firstItem="Tz6-5Q-37m" firstAttribute="top" secondItem="jDM-Gp-oey" secondAttribute="bottom" constant="56" id="flg-4l-9th"/>
+                            <constraint firstItem="jDM-Gp-oey" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="fqk-Rd-Rwj"/>
+                            <constraint firstItem="BQd-DN-zZr" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="laA-4n-aOA"/>
+                            <constraint firstItem="Tz6-5Q-37m" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="swb-tR-WfZ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Scanner" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Scanner" image="Scan" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="previewView" destination="jDM-Gp-oey" id="T81-kK-MJz"/>
                         <outlet property="scanButton" destination="BQd-DN-zZr" id="jHY-0f-xQ5"/>
@@ -197,7 +200,7 @@
                             <constraint firstItem="cTA-f7-msK" firstAttribute="top" secondItem="zNs-4I-Dpy" secondAttribute="bottom" constant="10" id="svJ-lc-dJy"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Offers" id="6OM-AW-aDH"/>
+                    <tabBarItem key="tabBarItem" title="Offers" image="Beacons" id="6OM-AW-aDH"/>
                     <connections>
                         <outlet property="offersTable" destination="zNs-4I-Dpy" id="QCc-v8-aUD"/>
                     </connections>
@@ -208,7 +211,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="Beacons" width="30" height="30"/>
+        <image name="Map" width="30" height="30"/>
+        <image name="Scan" width="30" height="30"/>
     </resources>
 </document>
