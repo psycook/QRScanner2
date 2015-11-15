@@ -44,6 +44,7 @@
    
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MyIdentifier"];
+        cell.backgroundColor = [UIColor colorWithRed:102.0f/255.0f green:204.0f/255.0f blue:1.0f alpha:1.0f];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
@@ -59,8 +60,6 @@
     return [appDelegate.offersArray count];
 }
 
-
-
 /*
 #pragma mark - Navigation
 
@@ -70,6 +69,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 
 @end

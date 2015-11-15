@@ -47,7 +47,7 @@
     }
     else{
         [self stopReading];
-        [self.scanButton setTitle:@"Start" forState:UIControlStateNormal];
+        [self.scanButton setTitle:@"Scan" forState:UIControlStateNormal];
     }
     _isReading = !_isReading;
 }
@@ -56,7 +56,7 @@
     [_captureSession stopRunning];
     _captureSession = nil;
     [_videoPreviewLayer removeFromSuperlayer];
-    [self.scanButton setTitle:@"Start" forState:UIControlStateNormal];
+    [self.scanButton setTitle:@"Scan" forState:UIControlStateNormal];
 }
 
 #pragma mark Sound Related Methods
@@ -123,7 +123,7 @@
             
             // set the buttion back to start text
             [self.scanButton performSelectorOnMainThread:@selector(setTitle:)
-                                              withObject:@"Start!"
+                                              withObject:@"Scan"
                                            waitUntilDone:NO];
             _isReading = NO;
             if (_audioPlayer) {

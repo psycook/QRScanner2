@@ -16,6 +16,11 @@
 
 @synthesize offersArray, offersDictionary;
 
+static NSString * const purpleBeaconUUID  = @"B9407F30-F5F8-466E-AFF9-25556B57FE6D";
+static NSString * const blueBeaconUUID    = @"B9407F30-F5F8-466E-AFF9-25556B57FE6D";
+static NSString * const greenBeaconUUID   = @"B9407F30-F5F8-466E-AFF9-25556B57FE6D";
+static NSString * const virtualBeaconUUID = @"8492E75F-4FD6-469D-B132-043FE94921D8";
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
@@ -32,14 +37,33 @@
         [self.locationManager requestAlwaysAuthorization];
     }
     
-    CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc]
-                                                        initWithUUIDString:@"8492E75F-4FD6-469D-B132-043FE94921D8"]
-                                                                     major:10374
-                                                                     minor:24794
+    CLBeaconRegion *region1 = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc]
+                                                        initWithUUIDString:purpleBeaconUUID]
+                                                                     major:12538
+                                                                     minor:61339
                                                                 identifier:@"Wholemeal Rice"];
-    [self.locationManager startMonitoringForRegion:region];
-    [self.locationManager startRangingBeaconsInRegion:region];
+    CLBeaconRegion *region2 = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc]
+                                                                             initWithUUIDString:blueBeaconUUID]
+                                                                      major:50825
+                                                                      minor:27804
+                                                                 identifier:@"Red Chillies"];
+    CLBeaconRegion *region3 = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc]
+                                                                             initWithUUIDString:greenBeaconUUID]
+                                                                      major:48074
+                                                                      minor:47114
+                                                                 identifier:@"Sausages"];
+    CLBeaconRegion *region4 = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc]
+                                                                             initWithUUIDString:@"8492E75F-4FD6-469D-B132-043FE94921D8"]
+                                                                      major:10374
+                                                                      minor:24794
+                                                                 identifier:@"Fennel Seeds"];
+
+    [self.locationManager startRangingBeaconsInRegion:region1];
+    [self.locationManager startRangingBeaconsInRegion:region2];
+    [self.locationManager startRangingBeaconsInRegion:region3];
+    [self.locationManager startRangingBeaconsInRegion:region4];
     NSLog(@"Monitoring Beacons");
+    
     return YES;
 }
 
@@ -65,7 +89,6 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-
 #pragma mark Beacon Delegate Methods
 - (void)locationManager:(CLLocationManager *)manager
          didEnterRegion:(CLRegion *)region {
@@ -86,16 +109,15 @@
         didRangeBeacons:(NSArray *)beacons
                inRegion:(CLBeaconRegion *)region {
     
-    if ([beacons count] > 0) {
-        CLBeacon *nearestExhibit = [beacons firstObject];
+    NSString *regionID = region.identifier;
 
-        // Present the exhibit-specific UI only when
-        // the user is relatively close to the exhibit.
-        if (CLProximityNear == nearestExhibit.proximity) {
-            if([nearestExhibit.proximityUUID.UUIDString isEqual:@"8492E75F-4FD6-469D-B132-043FE94921D8"]) {
-                [offersDictionary setValue:@"Wholemeal Rice" forKey:@"Wholemeal Rice"];
+    if ([beacons count] > 0) {
+        CLBeacon *beacon = [beacons firstObject];
+        if(beacon.proximity == CLProximityNear) {
+            if([offersDictionary objectForKey:regionID] == nil) {
+                [offersDictionary setValue:regionID forKey:regionID];
                 offersArray = [offersDictionary allValues];
-                NSLog(@"Added Offer, there are %d offers", [offersDictionary count]);
+                NSLog(@"Added Offer %@, there are %d offers", regionID, (int)[offersDictionary count]);
                 [[NSNotificationCenter defaultCenter] postNotificationName:@"refreshView" object:nil];
             }
         }
