@@ -13,7 +13,6 @@
 @end
 
 @implementation AppDelegate
-
 @synthesize offersArray, offersDictionary;
 
 static NSString * const purpleBeaconUUID  = @"B9407F30-F5F8-466E-AFF9-25556B57FE6D";
@@ -29,6 +28,8 @@ static NSString * const virtualBeaconUUID = @"8492E75F-4FD6-469D-B132-043FE94921
     _locationManager = [[CLLocationManager alloc] init];
     _locationManager.delegate = self;
     
+    [_locationManager requestAlwaysAuthorization];
+    
     //remove existing regions
     for (CLRegion *monitored in [_locationManager monitoredRegions])
         [_locationManager stopMonitoringForRegion:monitored];
@@ -41,22 +42,22 @@ static NSString * const virtualBeaconUUID = @"8492E75F-4FD6-469D-B132-043FE94921
                                                         initWithUUIDString:purpleBeaconUUID]
                                                                      major:12538
                                                                      minor:61339
-                                                                identifier:@"Wholemeal Rice"];
+                                                                identifier:@"Wholemeal Rice Reduced"];
     CLBeaconRegion *region2 = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc]
                                                                              initWithUUIDString:blueBeaconUUID]
                                                                       major:50825
                                                                       minor:27804
-                                                                 identifier:@"Red Chillies"];
+                                                                 identifier:@"Red Chillies 2 for 1"];
     CLBeaconRegion *region3 = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc]
                                                                              initWithUUIDString:greenBeaconUUID]
                                                                       major:48074
                                                                       minor:47114
-                                                                 identifier:@"Sausages"];
+                                                                 identifier:@"Sausages 2 for £5"];
     CLBeaconRegion *region4 = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc]
                                                                              initWithUUIDString:@"8492E75F-4FD6-469D-B132-043FE94921D8"]
                                                                       major:10374
                                                                       minor:24794
-                                                                 identifier:@"Fennel Seeds"];
+                                                                 identifier:@"Fennel Seeds 25% Extra"];
 
     [self.locationManager startRangingBeaconsInRegion:region1];
     [self.locationManager startRangingBeaconsInRegion:region2];
@@ -65,6 +66,11 @@ static NSString * const virtualBeaconUUID = @"8492E75F-4FD6-469D-B132-043FE94921
     NSLog(@"Monitoring Beacons");
     
     return YES;
+}
+
+- (void)clearOffers {
+    [offersDictionary removeAllObjects];
+    offersArray = [[NSArray alloc] init];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -113,7 +119,7 @@ static NSString * const virtualBeaconUUID = @"8492E75F-4FD6-469D-B132-043FE94921
 
     if ([beacons count] > 0) {
         CLBeacon *beacon = [beacons firstObject];
-        if(beacon.proximity == CLProximityNear) {
+        if(beacon.proximity == CLProximityImmediate) {
             if([offersDictionary objectForKey:regionID] == nil) {
                 [offersDictionary setValue:regionID forKey:regionID];
                 offersArray = [offersDictionary allValues];

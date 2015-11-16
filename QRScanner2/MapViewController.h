@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  MapViewController
 //  QRScanner2
 //
 //  Created by Simon Cook on 10/11/2015.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface MapViewController : UIViewController
-
-
+@interface MapViewController : UIViewController <MKMapViewDelegate>
 @end
 

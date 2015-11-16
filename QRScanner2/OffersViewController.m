@@ -36,6 +36,13 @@
     [self.offersTable reloadData];
 }
 
+- (IBAction)clear:(id)sender {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate clearOffers];
+    [self.offersTable reloadData];
+}
+
+
 #pragma mark UITableViewDataSource Methods
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

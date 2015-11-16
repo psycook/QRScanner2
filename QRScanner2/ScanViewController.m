@@ -1,5 +1,5 @@
 //
-//  SecondViewController.m
+//  ScanViewController.m
 //  QRScanner2
 //
 //  Created by Simon Cook on 10/11/2015.

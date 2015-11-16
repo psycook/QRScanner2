@@ -15,5 +15,7 @@
 @property (strong, nonatomic) NSMutableDictionary *offersDictionary;
 @property (strong, nonatomic) NSArray             *offersArray;
 
+- (void)clearOffers;
+
 @end
 
