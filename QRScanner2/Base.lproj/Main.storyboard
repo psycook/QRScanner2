@@ -78,11 +78,11 @@
                                     <constraint firstAttribute="height" constant="300" id="yss-LA-teA"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan QR Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tz6-5Q-37m">
-                                <rect key="frame" x="218" y="336" width="165" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan QR Code" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tz6-5Q-37m">
+                                <rect key="frame" x="20" y="336" width="560" height="60"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="AOD-Lq-Th4"/>
+                                    <constraint firstAttribute="height" constant="60" id="AOD-Lq-Th4" userLabel="height = 60"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -106,9 +106,10 @@
                         <animations/>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tz6-5Q-37m" secondAttribute="trailing" id="07h-Gj-7il"/>
                             <constraint firstItem="jDM-Gp-oey" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="10" id="BcP-FU-fMn"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="BQd-DN-zZr" secondAttribute="bottom" constant="10" id="EYv-vE-JKs"/>
-                            <constraint firstItem="Tz6-5Q-37m" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="LvZ-HB-Cu7"/>
+                            <constraint firstItem="Tz6-5Q-37m" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="Zsg-8P-IB8"/>
                             <constraint firstItem="jDM-Gp-oey" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="pgw-iR-Q3q"/>
                             <constraint firstItem="BQd-DN-zZr" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="tiS-CU-gUh"/>
                             <constraint firstItem="Tz6-5Q-37m" firstAttribute="top" secondItem="jDM-Gp-oey" secondAttribute="bottom" constant="6" id="u1d-Gw-y2G"/>

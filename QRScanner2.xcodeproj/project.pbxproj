@@ -18,7 +18,6 @@
 		093FAE8C1BF28D17004F17B6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093FAE8B1BF28D17004F17B6 /* AVFoundation.framework */; };
 		093FAE8E1BF29006004F17B6 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 093FAE8D1BF29006004F17B6 /* beep.mp3 */; };
 		093FAE901BF29B62004F17B6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093FAE8F1BF29B62004F17B6 /* MapKit.framework */; };
-		093FAE961BF29E66004F17B6 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093FAE951BF29E66004F17B6 /* EstimoteSDK.framework */; };
 		093FAE981BF2A159004F17B6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093FAE971BF2A159004F17B6 /* CoreLocation.framework */; };
 		093FAE9A1BF2A162004F17B6 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093FAE991BF2A162004F17B6 /* CoreBluetooth.framework */; };
 		093FAE9C1BF2A16C004F17B6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093FAE9B1BF2A16C004F17B6 /* SystemConfiguration.framework */; };
@@ -58,7 +57,6 @@
 				093FAE981BF2A159004F17B6 /* CoreLocation.framework in Frameworks */,
 				093FAE901BF29B62004F17B6 /* MapKit.framework in Frameworks */,
 				093FAE8C1BF28D17004F17B6 /* AVFoundation.framework in Frameworks */,
-				093FAE961BF29E66004F17B6 /* EstimoteSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
